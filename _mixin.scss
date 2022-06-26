@@ -1,0 +1,26 @@
+@import './tokens';
+
+
+@mixin  elementLi {
+    color: $fotn-color-1;
+    font-size: $font-size;
+    &:hover {
+        color: $fotn-color-2;
+        cursor: pointer;
+    }
+}
+
+@mixin  elementLi2($level) {
+    // color: $fotn-color-1;
+    @if($level == 1) {
+        color: $fotn-color-1
+    }
+    @if($level == 2) {
+        color: $fotn-color-2;
+    }
+    font-size: $font-size;
+    &:hover {
+        color: $fotn-color-3;
+        cursor: pointer;
+    }
+}

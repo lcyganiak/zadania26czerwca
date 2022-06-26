@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+body .main-nav {
+  background-color: whitesmoke;
+  border-bottom: 1px solid black;
+}
+
+body .main-nav .main-nav-ul .main-nav-ul--li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  color: yellow;
+  font-size: 26px;
+}
+
+body .main-nav .main-nav-ul .main-nav-ul--li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+body .main-nav .main-nav-ul .main-nav-ul--li__first {
+  color: green;
+}
+
+body .main-aside .main-aside-ul .main-aside-ul--li {
+  color: red;
+  font-size: 26px;
+}
+
+body .main-aside .main-aside-ul .main-aside-ul--li:hover {
+  color: black;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

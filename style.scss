@@ -1,0 +1,36 @@
+@import './tokens';
+@import './mixin';
+
+body {
+    margin: 0;
+    .main-nav {
+        background-color: whitesmoke;
+        border-bottom: 1px solid black;
+        .main-nav-ul {
+            .main-nav-ul--li {
+              display: inline-block;
+              width: 20%;
+              text-align: center;
+                @include elementLi2(1);
+    
+              &__first {
+                color: green;
+              }
+            }  
+    
+        }
+        
+    }
+
+.main-aside{
+  .main-aside-ul {
+    .main-aside-ul--li {
+        @include elementLi2(2);
+    }
+  }  
+}
+
+
+
+}
+
