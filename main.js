@@ -35,7 +35,7 @@ const obj = {
  // 1. 
  obj.key2 // zwróci wartość 'wartość 2'
  // 2 - zapis tablicowy
- obj[key1] // zwróci wartość 'wartość 1'
+ obj['key1'] // zwróci wartość 'wartość 1'
 // zapisywanie kluczy objektu w tablicy
  const wartosciKluczyZObjektu = Object.keys(obj) // zwróci tablicę ['key2', 'key2']
  wartosciKluczyZObjektu.forEach(item => {
@@ -135,16 +135,16 @@ const osoba1 = new Osoba('Michał', 9) // tworzy objekt {nazwaKluczName : 'Micha
 console.log(osoba1) // {nazwaKluczName : 'Michał',nazwaKluczAge: 9 }
 
 class Wyliczenia {
-    constructor() {
-        function policzPodatki(dochod, podatek) {
+         policzPodatki(dochod, podatek) {
             return dochod * podatek
         }
 
-    }
+    
 }
 
 class Podatki extends Wyliczenia {
     constructor(podatek1, podatek2) {
+        super()
         this.pit = podatek1
         this.vat = podatek2
         this.podatekPitDoZapłaty = 0
@@ -163,3 +163,13 @@ lukasz.dochodZMieciaca = 5000
 
 console.log(lukasz.ilePodatku) // `Podatku do zapłacenia jest 5000 * 0.18 `
 
+// for(let sth in elLi) {
+//     console.log(elLi)
+//     console.log(sth)
+// }
+
+// const arr = [ "Jan", "Michał", "Rafał"]
+
+// for(let i =0; i < arr.length; i++ ) {
+//     console.log(arr[i])
+// }
